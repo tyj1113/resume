@@ -1,0 +1,234 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Microsoft Yahei;
+    font-size: 12px;
+    font-weight: 300;
+    color: #333;
+}
+* {
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* layout */
+
+footer {
+    padding: 5vh 0;
+    text-align: center;
+    background: #f2f2f2;
+    font-size: 1.1rem;
+}
+
+header {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10vw;
+    border-bottom: 1px solid #ddd;
+    background: rgba(255,255,255,0.9);
+}
+
+.resume {
+    padding: 10vh 2rem;
+    padding-top: calc(30px + 10vh);
+    background: #fafafa;
+}
+
+.myName {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.resumeLink {
+    color: #999;
+    font-size: 1.1rem;
+    display: none;
+}
+
+/* main */
+
+.resume {
+    padding: 10vh 2rem;
+    padding-top: calc(30px + 10vh);
+    background: #fafafa;
+}
+
+.resume a {
+    color: #666;
+    text-decoration-color: #666;
+}
+
+.resume .downloadGroup {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.resume .downloadGroup .download {
+    margin: 0 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+.resume .downloadGroup .download:hover {
+    color: #000;
+    border-color: #000;
+}
+.resume .ml-10 {
+    margin-left: 10px;
+}
+.resume .ml-20 {
+    margin-left: 20px;
+}
+
+.resume .wrapper {
+    background: #fff;
+    max-width: 1000px;
+    padding: 5rem 3rem;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.resume .information {
+    display: flex;
+    justify-content: space-between;
+}
+.information .name {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.information .title {
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.information .info {
+    text-align: right;
+}
+
+.information .me {
+    text-align: left;
+}
+.information p {
+    font-size: 1rem;
+    color: #999;
+}
+
+.resume .hr {
+    width: 100%;
+    border-top: 1px solid #eee;
+    margin: 20px 0 30px;
+}
+
+.resume .showLink:hover {
+    border-color: black;
+    color: black;
+}
+
+.resume .module {
+    display: flex;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    line-height: 2.5rem;
+}
+.resume .module > .title {
+    width: 150px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    text-align: center;
+    font-weight: 500;
+}
+
+.resume .module > .content {
+    color: #666;
+    padding: 0 3rem;
+    flex-grow: 1;
+}
+
+.resume .module > .content .right {
+    float: right;
+}
+.resume .module > .content .title {
+    font-weight: 400;
+}
+
+
+.QRCode{
+    position: relative;
+}
+.QRCode img{
+    /*display: none;*/
+    position: absolute;
+    top:20px;
+    left:0;
+    width: 80px;
+}
+
+.item.skill div{
+    margin-bottom: 10px;
+
+}
+
+/* @media print */
+
+@media print {
+    footer,
+    header {
+        display: none;
+    }
+
+    .resume {
+        padding: 0;
+    }
+
+    .resume .downloadGroup {
+        display: none;
+    }
+
+    .resume .wrapper {
+        padding: 0;
+        max-width: none;
+    }
+
+    .resume .module {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        line-height: 2rem;
+    }
+    .resume .module > .title {
+        width: 60px;
+    }
+    .resume .module > .content {
+        font-weight: 400;
+    }
+
+    .resume .module ul {
+        margin: 5px 0;
+    }
+    .resume .resumeLink {
+        left: 10px;
+        top: 10px;
+        display: block;
+    }
+}
+
+@page {
+    size: A4;
+}
+
