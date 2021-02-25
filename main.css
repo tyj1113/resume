@@ -25,6 +25,7 @@ footer {
     text-align: center;
     background: #f2f2f2;
     font-size: 1.1rem;
+    min-width: 988px;
 }
 
 header {
@@ -106,6 +107,7 @@ header {
 .resume .information {
     display: flex;
     justify-content: space-between;
+    min-width: 766px;
 }
 .information .name {
     font-size: 3.5rem;
@@ -146,6 +148,7 @@ header {
     font-size: 1.3rem;
     margin-top: 15px;
     line-height: 2.5rem;
+    min-width: 928px;
 }
 .resume .module > .title {
     width: 150px;
