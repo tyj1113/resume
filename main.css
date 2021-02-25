@@ -66,6 +66,7 @@ header {
     padding: 10vh 2rem;
     padding-top: calc(30px + 10vh);
     background: #fafafa;
+    min-width: 1000px;
 }
 
 .resume a {
@@ -97,8 +98,7 @@ header {
 }
 
 .resume .wrapper {
-    background: #fff;
-    max-width: 1000px;
+    background:  #fff;
     padding: 5rem 3rem;
     margin: 0 auto;
     border-radius: 5px;
@@ -148,7 +148,6 @@ header {
     font-size: 1.3rem;
     margin-top: 15px;
     line-height: 2.5rem;
-    min-width: 928px;
 }
 .resume .module > .title {
     width: 150px;
@@ -206,7 +205,7 @@ header {
 
     .resume .wrapper {
         padding: 0;
-        max-width: none;
+        /*max-width: none;*/
     }
 
     .resume .module {
